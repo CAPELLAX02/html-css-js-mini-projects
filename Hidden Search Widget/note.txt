@@ -1,0 +1,28 @@
+If you change the HTML tag to form instead of div you can make it behave as an actual search bar.
+
+1. Clicking on the lens button will show the bar;
+
+2. Clicking again on the lens button will NOT hide it, but rather submit the form;
+
+3. To hide the search bar, you just click on the body, outside the form.
+
+Hope it's a nice addition!
+
+// Click on lens to add 'active' class
+btn.addEventListener('click', (e) => {
+    search.classList.add('active')
+    input.focus()
+})
+ 
+// Click outside to hide bar
+document.addEventListener('click', (e) => {
+    if (e.target.nodeName === 'BODY') {
+      search.classList.remove('active')
+    }
+  })
+ 
+// Submit function on button
+search.addEventListener('submit', (e) => {
+    e.preventDefault()
+    input.value && console.log('submit', input.value)
+  })

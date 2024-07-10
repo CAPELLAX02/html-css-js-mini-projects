@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: linear-gradient(45deg, #35ffae, #2bb1ff);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.edit-mode {
+  color: #555;
+}
+
+/* Form & Input */
+.form-input {
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid #c5a9e3;
+  border-radius: 20px;
+  outline: none;
+  box-shadow: 2px 2px 3px 1px #9180e2;
+}
+
+.form-input-filter {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid #075259;
+  background: transparent;
+  outline: none;
+}
+
+/* Buttons */
+.btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px 1px #9180e2;
+}
+
+.btn-link {
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-clear {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px 1px #9180e2;
+}
+
+.btn-clear:hover {
+  background-color: #3e3e3e;
+  border-color: #3e3e3e;
+}
+
+.text-red {
+  color: rgb(83, 4, 162);
+}
+
+/* Items */
+
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items li {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  border: 2px solid #333;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 0 5px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px 1px #0d9244;
+}
+
+@media (max-width: 500px) {
+  .items li {
+    width: 95%;
+  }
+}
